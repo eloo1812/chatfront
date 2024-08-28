@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecione uma Sala</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"> <!-- Fonte Poppins -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #343a40;
+            overflow: hidden; /* Evita rolagem */
+        }
+
+        
+
+        .title {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #007bff;
+            font-weight: bold;
+            align-items: center;
+            text-align: center;
+        }
+
+        .balloons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .balloon {
+            width: 140px;
+            height: 140px;
+            background-color: #007bff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            color: white;
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .balloon:hover {
+            transform: scale(1.1);
+            text-decoration: none;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .balloon:nth-child(2) { background-color: #00A7FF; }
+        .balloon:nth-child(3) { background-color: #1E90FF; }
+        .balloon:nth-child(4) { background-color: #4169E1; }
+        .balloon:nth-child(5) { background-color: #4682B4; }
+        .balloon:nth-child(6) { background-color: #5F9EA0; }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2rem;
+            }
+
+            .balloon {
+                width: 100px;
+                height: 100px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="chat-section" id="chat-section">
+        <div class="chat-container">
+            <div class="title">Selecione uma Sala</div>
+            <div class="balloons">
+                <a class="balloon" href="chat.html">Defensores do<br>Javascript</a>
+                <a class="balloon" href="chat.html">Gênios da<br>INFO</a>
+                <a class="balloon" href="chat.html">Vingadores do<br>Java</a>
+                <a class="balloon" href="chat.html">Renegados do<br>Twitter</a>
+                <a class="balloon" href="chat.html">Só quero<br>reclamar</a>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
